@@ -180,19 +180,19 @@ a:hover, a:focus {
 
 @media screen and (max-width: 320px) and (min-width: 257px){
   .grid {
-    padding-right: 0px;
-    padding-top: calc(100% - 60%);
+    padding-right: 0px!important;
+    padding-top: calc(100% - 60%)!important;
   }
 }
 @media screen and (max-width: 570px) and (min-width: 320px){
   .grid {
-    padding-right: 0px;
-    padding-top: calc(100% - 70%);
+    padding-right: 0px !important;
+    padding-top: calc(100% - 70%)!important;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 571px){
   .grid {
-    padding-right: 0px;
-    padding-top: calc(100% - 85%);
+    padding-right: 0px !important;
+    padding-top: calc(100% - 85%) !important;
   }
 }
