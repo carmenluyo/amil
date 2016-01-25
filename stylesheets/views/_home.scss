@@ -5,12 +5,12 @@
 }
 
 .row {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 body{
-  color: #7B665F;
+  color: black;
   font-family: gothambold-webfont;
 }
 a:hover, a:focus {
@@ -79,6 +79,7 @@ a:hover, a:focus {
   display: none;
 }
 #menu, .sub-menu {
+  position: fixed;
   display: none;
   list-style: none;
   background-color: #A7A9AC;
@@ -147,10 +148,49 @@ a:hover, a:focus {
   }
 }
 
+/* SECTION SPACE*/
+.space{
+  background-image: url(../img/AMIL_space.jpg) !important;
+  .text_space{
+    color: white;
+    font-size: 23px;
+    padding-top: 5%;
+    padding-left: calc(100% - 62%);
+  }
+}
 
+/* SECTION EXHIBITIONS */
 
+.exhibitions {
+  background-color: white !important;
+  background-image: none !important;
+    img{
+      width: 100%;
+    }
+  .text_exhibitions {
+    padding: 5%;
+    padding-left: 0px;
+  }
+  .titulo_exhibitions{
+    font-weight: bold;
+  }
+}
 
-
+.carousel-caption{
+  top: 0px;
+  left: 0px !important;
+  text-align: left !important;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 5%;
+}
+.carousel-control {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.marg_bott_8 {
+  margin-bottom: -8px;
+}
 @media screen and (max-width: 1201px){
   .home .barra_nav {
     background-color: white;
