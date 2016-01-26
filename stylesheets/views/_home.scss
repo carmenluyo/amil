@@ -236,3 +236,68 @@ a:hover, a:focus {
     padding-top: calc(100% - 85%) !important;
   }
 }
+
+/* TABS MENU */ 
+
+$num-of-tabs: 4;
+
+@mixin tabs {
+  @for $i from 1 through $num-of-tabs {
+    &:nth-of-type(#{$i}) {
+      &:checked {
+        ~ .slide {
+          left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
+        }
+      }
+    }
+  }
+}
+
+.tab-wrap {
+  position: relative;
+  top: -88px;
+}
+label {
+  margin-left: 10% !important;
+  margin-bottom: 0px !important;
+  color: #CECECE;
+}
+input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1;
+  &:checked {
+    + .tab-label-content {
+      label {
+        color: black;
+      }
+      .tab-content {
+        display: block;
+      }
+    }
+  }
+  @include tabs;
+  &:first-of-type {
+    &:checked {
+      ~ .slide {
+        left: 0;
+      }
+    }
+  }
+}
+
+.tab-label-content {
+  width: 100%;
+  .tab-content {
+    position: absolute;
+    top: 100px;
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
+
