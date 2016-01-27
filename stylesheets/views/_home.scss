@@ -333,3 +333,17 @@ video {
     height: 100%;
     width: 100%;
 }
+
+
+
+/* CONTACT */
+.contact {
+  background-image: url(../img/AMIL_contact.jpg) !important;
+  .grid {
+    padding-right: 0px;
+    padding-top: calc(100% - 75%);
+    .text {
+      min-height: 14%;
+    }
+  }
+}

@@ -5789,4 +5789,13 @@ video {
   height: 100%;
   width: 100%; }
 
+/* CONTACT */
+.contact {
+  background-image: url(../img/AMIL_contact.jpg) !important; }
+  .contact .grid {
+    padding-right: 0px;
+    padding-top: calc(100% - 75%); }
+    .contact .grid .text {
+      min-height: 14%; }
+
 /*# sourceMappingURL=main.css.map */
