@@ -5608,7 +5608,8 @@ a:hover, a:focus {
   cursor: pointer;
   width: 37px !important;
   display: inline-block;
-  margin-left: 2%; }
+  margin-left: 2%;
+  z-index: 9999999999999999999999999999999; }
   .tb-menu-toggle i {
     background-color: black !important;
     position: absolute;
@@ -5728,7 +5729,8 @@ a:hover, a:focus {
 label {
   margin-left: 10% !important;
   margin-bottom: 0px !important;
-  color: #CECECE; }
+  color: #CECECE;
+  font-size: 10px; }
 
 input[type="radio"][name="tabs"] {
   position: absolute;
@@ -5762,5 +5764,29 @@ input[type="radio"][name="tabs"] {
     top: -106px; } }
 .container {
   position: relative; }
+
+/*  VIDEO */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg") no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity; }
+
+.video_link {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

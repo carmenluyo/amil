@@ -61,3 +61,37 @@ $('#menu-toggle').threeBarToggle({color: 'green', width: 30, height: 25});
 // Make any nested ul-based menu mobile
 // Optional arguments are 'speed' and 'accordion' (true or false) to disable the behavior of closing other sub
 $('#menu').accordionMenu();
+
+
+
+var video = document.getElementById("bgvid"),
+pauseButton = document.querySelector("#polina button");
+
+function vidFade() {
+  video.classList.add("stopfade");
+}
+
+video.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+video.pause();
+vidFade();
+}, false); 
+ 
+pauseButton.addEventListener("click", function() {
+  video.classList.toggle("stopfade");
+  if (video.paused) {
+    video.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    video.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+}, false);
+
+video.addEventListener('touchstart', function(e) {
+e.preventDefault();
+video.play();
+})
+
+
