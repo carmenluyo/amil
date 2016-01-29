@@ -1,4 +1,4 @@
-
+// SCRIPT DEL MENU
 
 $.fn.extend({
   
@@ -49,7 +49,6 @@ $.fn.extend({
         event.preventDefault();
         $(this).siblings().slideToggle(options.speed);
       });
-      
     });
   }
 });
@@ -63,6 +62,9 @@ $('#menu-toggle').threeBarToggle({color: 'green', width: 30, height: 25});
 $('#menu').accordionMenu();
 
 
+
+
+//  SCRIPT DEL VIDEO INDEX 
 
 var video = document.getElementById("bgvid"),
 pauseButton = document.querySelector("#polina button");

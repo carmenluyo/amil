@@ -5735,6 +5735,27 @@ a:hover, a:focus {
   .grid {
     padding-right: 0px !important;
     padding-top: calc(100% - 85%) !important; } }
+/* IPHONE 5 */
+@media screen and (max-width: 570px) and (min-width: 300px) {
+  .exhibitions .tab-content, .space .tab-content, .contact .tab-content {
+    padding-top: 45%; }
+  .exhibitions .logo img, .space .logo img, .contact .logo img {
+    width: 60px !important;
+    margin-top: -45% !important; }
+
+  .titulo_nav {
+    font-size: 25px !important; }
+
+  .carousel-caption {
+    font-size: 16px; }
+
+  .carousel-indicators {
+    visibility: hidden; }
+
+  .space .text_space {
+    padding-left: 0px;
+    font-size: 17px;
+    margin-top: 30%; } }
 /* TABS MENU */
 .tab-wrap {
   position: relative;
