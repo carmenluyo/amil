@@ -5532,7 +5532,7 @@ button.close {
 
 body {
   color: black;
-  font-family: gothambold-webfont !important; }
+  font-family: gothambold-webfont; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -5559,7 +5559,8 @@ a:hover, a:focus {
     height: 112px !important; }
     .home .barra_nav nav {
       height: 112px !important;
-      width: 100%; }
+      width: 100%;
+      font-family: gothambold-webfont; }
     .home .barra_nav .titulo_nav {
       text-align: center;
       font-size: 35px;
@@ -5661,9 +5662,6 @@ a:hover, a:focus {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
-@media (min-width: 992px) {
-  .home {
-    height: 100%; } }
 /* SECTION SPACE*/
 .space {
   background-image: url(../img/AMIL_space.jpg) !important; }
@@ -5681,7 +5679,8 @@ a:hover, a:focus {
     width: 100%; }
   .exhibitions .text_exhibitions {
     padding: 15px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    line-height: 15px; }
   .exhibitions .titulo_exhibitions {
     font-weight: bold; }
 
@@ -5820,5 +5819,52 @@ video {
 
 .lineHeight {
   line-height: 15px; }
+
+#oculto {
+  /*Con esta instruccion hacemos q el texto a mostrar este oculto de manera predeterminada al ingresar a la pagina por primera ves*/
+  display: none; }
+
+#ee {
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto; }
+
+.resume {
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 24px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.resume.open {
+  max-height: 100% !important;
+  overflow: initial !important;
+  -webkit-line-clamp: initial !important; }
+
+.read-more {
+  margin: 30px 0 0 0;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px 0;
+  display: block;
+  cursor: pointer;
+  background: #ff8f3d;
+  border-radius: 4px;
+  transition: all 400ms ease-in-out; }
+
+.read-more:hover {
+  background: #ff9b52;
+  color: #f56800; }
+
+.read-more span {
+  color: #eb6300;
+  font-weight: bold;
+  display: block; }
+
+.read-more span.less {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
