@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html xmlns:ng="http://angularjs.org" ng-app lang="en">
+<html>
 
 	<head>
 
@@ -105,9 +105,10 @@
 
                     </div>
                     <div class="col-md-4">
-                        <div class="img">
+                      <div class="img">
                             <img src="img/AMIL_slider.jpg">
                         </div>
+                        
                         <div class="text_exhibitions">
                             <div class="titulo_exhibitions">
                               SERGIO ZEVALLOS  
@@ -115,6 +116,37 @@
                             Freddy Mercury móvil de arte contemporáneo que espera ser un
                             puente entre la escena local.
                         </div>
+                        <div id="more" class="more text_exhibitions margTop23">
+                          En la muestra, cada serie exhibida se conecta con las otras series
+                            en base a líneas temáticas, semejanzas formales, asociaciones
+                            conceptuales y estrategias metodológicas. Pero, más allá de este
+                            itinerario que conecta estas series de obras entre sí, cada una de
+                            ellas en sí misma ya implica procesos de articulación: cada obra implementa
+                            el engarce de lógicas disímiles. Es así que cada pieza
+                            orquesta un encuentro, fallido como una colisión (pero encuentro
+                            al fin y al cabo), entre diferentes marcos perceptuales, sensoriales
+                            e intelectuales cuyas referencias se entretejen y amalgaman.
+                            La serie de esculturas Nostransferimos alude en su título al servicio
+                            de transferencia de archivos digitales “WeTransfer”. Estas obras
+                            han sido hechas al verter yeso en cajas que almacenaban trabajos
+                            antiguos del artista, de modo tal que el resultado final se determina
+                            por los en tanto ésta actúa como molde. Así, cada pieza
+                            acumula, conserva y transforma a estos elementos que resultan
+                            apenas discernibles bajo su manto de escayola.
+                            En la muestra, cada serie exhibida se conecta con las otras series
+                            en base a líneas temáticas, semejanzas formales, asociaciones
+                            conceptuales y estrategias metodológicas. Pero, más allá de este
+                            itinerario que conecta estas series de obras entre sí, cada una de
+                            ellas en sí misma ya implica procesos de articulación: cada obra implementa
+                            el engarce de lógicas disímiles. Es así que cada pieza
+                            orquesta un encuentro, fallido como una colisión (pero encuentro
+                            al fin y al cabo), entre diferentes marcos perceptuales, sensoriales
+                            e intelectuales cuyas referencias se entretejen y amalgaman. 
+                        </div>
+                        <div class="leer_mas">
+                          <a href="#more" class="read-more">=</a>
+                        </div>
+                          
 
                     </div>
                     <div class="col-md-4">
@@ -129,14 +161,6 @@
                             puente entre la escena local.
 
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div id="ee">
-                        <div class="resume">
-                          Lorizzle ipsum dolor sit amizzle, you son of a bizzle adipiscing gangsta. Nullizzle da bomb things, ass volutpizzle, suscipit pimpin', gravida vizzle, you son of a bizzle. Pellentesque its fo rizzle tortor. Hizzle erizzle. I'm in the shizzle at dolor dang bling bling tempus shiznit. Maurizzle pellentesque shit tellivizzle turpizzle. Fo shizzle izzle shut the shizzle up. Pellentesque eleifend rhoncizzle nisi. In hizzle habitasse mofo dictumst. Mammasay mammasa mamma oo sa dapibizzle. Curabitur tellus shut the shizzle up, pretizzle rizzle, mattizzle izzle, eleifend vitae, ghetto. Sizzle suscipit. Integizzle semper velit i'm in the shizzle boom shackalack.
-                        </div>
-                        <a class="read-more" onclick="return false;"><span class="more">Read more</span><span class="less">Revert please</span></a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -303,20 +327,6 @@
                 </div> 
               </div>
             </div>
-          <input type="radio" name="tabs" id="tab4">
-          <div class="tab-label-content" id="tab4-content">
-            <label for="tab3"> 
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </label>
-              <div class="container">
-                <div class="tab-content">
-                  <div class="row">
-
-                  </div>
-                </div>
-              </div>
-          </div>
         </div>
         </div>
   </header>
@@ -325,7 +335,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="javascripts/miscript.js"></script>
     <script src="javascripts/modernizr.custom.64483.js"></script>
-  
+  <script>
+    $(".read-more").click(function(){
+  var me = $(this).toggleClass("open"),
+      txt = me.is('.open') ? 'Hide' : '=';
+  $(me.attr("href")).toggleClass("active");
+  me.text(txt);
+}); 
+  </script>
   
 
 </body>

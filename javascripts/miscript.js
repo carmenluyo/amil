@@ -99,11 +99,5 @@ video.play();
 
 
 
-$('.read-more').on 'click', ->
-  t = $(this)
-  $btn = t.find('span')
-  $txt = t.prev()
-        
-  $txt.toggleClass('open')
-  $btn.toggle()
-  
+
+ 

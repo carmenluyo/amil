@@ -49,8 +49,11 @@ a:hover, a:focus {
       color: gainsboro;
       margin-top: -39px;
       p{
-        direction: rtl;
-        unicode-bidi: bidi-override;
+        -webkit-transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        transform: scale(-1, 1);
         font-size: 35px;
         padding-left: 5%;
       }
@@ -65,10 +68,13 @@ padding-right: 2%;
         a {
           color: white;
         &:hover {
-          direction: rtl;
-          unicode-bidi: bidi-override;
+          -webkit-transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        transform: scale(-1, 1);
           text-align: -webkit-left;
-          transition: 3s;
+          transition: 2s;
         }
       }
     }
@@ -378,56 +384,24 @@ video {
       line-height: 15px;
 }
 
-#oculto
-{
-  /*Con esta instruccion hacemos q el texto a mostrar este oculto de manera predeterminada al ingresar a la pagina por primera ves*/
+
+
+.more {
   display: none;
+  .no-js & {
+    display: block;
+  }
 }
-
-
-
-#ee{
-  width: 100%;
-  max-width: 300px;
-  margin: 15px auto;
-}
-
-.resume {
-  font-weight: bold;
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  line-height: 24px;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-.resume.open {
-  max-height: 100% !important;
-  overflow: initial !important;
-  -webkit-line-clamp: initial !important;
-}
-
-.read-more {
-  margin: 30px 0 0 0;
-  text-decoration: none;
-  text-align: center;
-  padding: 16px 0;
-  display: block;
-  cursor: pointer;
-  background: #ff8f3d;
-  border-radius: 4px;
-  transition: all 400ms ease-in-out;
-}
-.read-more:hover {
-  background: #ff9b52;
-  color: #f56800;
-}
-.read-more span {
-  color: #eb6300;
-  font-weight: bold;
+.active { 
   display: block;
 }
-.read-more span.less {
+.no-js .read-more {
   display: none;
+}
+.leer_mas {
+      padding-bottom: 15px;
+    margin-top: -16px;
+}
+.margTop23 {
+      margin-top: -23px;
 }
