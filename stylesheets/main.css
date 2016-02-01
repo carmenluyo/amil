@@ -5532,7 +5532,7 @@ button.close {
 
 body {
   color: black;
-  font-family: gothambold-webfont; }
+  font-family: gothambold-webfont !important; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -5556,10 +5556,9 @@ a:hover, a:focus {
   background-size: cover; }
   .home .barra_nav {
     background-color: white;
-    height: 16%; }
-    .home .barra_nav .nav {
-      background-color: white;
-      height: 20%;
+    height: 112px !important; }
+    .home .barra_nav nav {
+      height: 112px !important;
       width: 100%; }
     .home .barra_nav .titulo_nav {
       text-align: center;
@@ -5568,13 +5567,13 @@ a:hover, a:focus {
       margin-top: -39px; }
       .home .barra_nav .titulo_nav p {
         direction: rtl;
-        unicode-bidi: bidi-override; }
+        unicode-bidi: bidi-override;
+        font-size: 35px;
+        padding-left: 5%; }
     .home .barra_nav .logo {
-      display: inline-block;
       float: right;
-      margin: 1%;
-      margin-right: 2%;
-      margin-top: -4%; }
+      padding-top: 1%;
+      padding-right: 2%; }
     .home .barra_nav ul > li {
       font-size: 16px; }
       .home .barra_nav ul > li a {
@@ -5594,7 +5593,8 @@ a:hover, a:focus {
   padding: 12px;
   color: white; }
   .text:hover {
-    opacity: 0.5; }
+    opacity: 0.5;
+    cursor: pointer; }
 
 .menubar-responsive {
   display: inline-block;
@@ -5680,7 +5680,7 @@ a:hover, a:focus {
   .exhibitions img {
     width: 100%; }
   .exhibitions .text_exhibitions {
-    padding: 5%;
+    padding: 15px;
     padding-left: 0px; }
   .exhibitions .titulo_exhibitions {
     font-weight: bold; }
@@ -5735,31 +5735,10 @@ a:hover, a:focus {
   .grid {
     padding-right: 0px !important;
     padding-top: calc(100% - 85%) !important; } }
-/* IPHONE 5 */
-@media screen and (max-width: 570px) and (min-width: 300px) {
-  .exhibitions .tab-content, .space .tab-content, .contact .tab-content {
-    padding-top: 45%; }
-  .exhibitions .logo img, .space .logo img, .contact .logo img {
-    width: 60px !important;
-    margin-top: -45% !important; }
-
-  .titulo_nav {
-    font-size: 25px !important; }
-
-  .carousel-caption {
-    font-size: 16px; }
-
-  .carousel-indicators {
-    visibility: hidden; }
-
-  .space .text_space {
-    padding-left: 0px;
-    font-size: 17px;
-    margin-top: 30%; } }
 /* TABS MENU */
 .tab-wrap {
   position: relative;
-  top: -88px; }
+  top: -93px; }
 
 label {
   margin-left: 10% !important;
@@ -5832,5 +5811,14 @@ video {
     padding-top: calc(100% - 75%); }
     .contact .grid .text {
       min-height: 14%; }
+
+.carousel-control > .glyphicon-chevron-left, .carousel-control > .icon-prev {
+  margin-left: -25px !important; }
+
+.carousel-control > .glyphicon-chevron-right, .carousel-control > .icon-next {
+  margin-right: -25px !important; }
+
+.lineHeight {
+  line-height: 15px; }
 
 /*# sourceMappingURL=main.css.map */

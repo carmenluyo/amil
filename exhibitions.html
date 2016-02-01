@@ -13,11 +13,11 @@
 	</head>
 
 	<body>
-    <section class="home exhibitions">
-        <div class="barra_nav">
+  <header class="home exhibitions"> 
+    <div class="barra_nav">
           <nav>
-            <h3 id="menu-toggle"></h3>
-              <ul id="menu">
+            <h3 id="menu-toggle" class="tb-menu-toggle" style="width: 30px; height: 25px; background: transparent;"><i style="background: green;"></i><i style="background: green;"></i><i style="background: green;"></i></h3>
+              <ul id="menu" class="tb-mobile-menu" style="display: none;">
                 <li><a href="exhibitions.html">exhibitions</a></li>
                 <li><a href="interventions.html">interventions</a></li>
                 <li><a href="residence.html">residence</a></li>
@@ -27,21 +27,24 @@
                 <li><a href="#spanol">spanol</a></li>
                 <li><a href="#piep-face-etc">piep-face-etc</a></li>         
               </ul>
-              <div class="titulo_nav">
-                <P>
-                  exhibitions
-                </P>
-              </div>
-            <a href="home.html">
+              <a href="home.html">
                 <div class="logo">
                     <img src="img/amil_logo.png" alt="">
                 </div> 
-            </a>
+              </a>
+              <div class="titulo_nav">
+                <center>
+                  <p>
+                  exhibitions
+                  </p>
+                </center>
+                  
+              </div>
+            
           </nav>
-        </div>
-        <div class="tab-wrap">
+          <div class="tab-wrap">
 
-          <input type="radio" name="tabs" id="tab1" checked>
+          <input type="radio" name="tabs" id="tab1" checked="">
             <div class="tab-label-content" id="tab1-content">
               <label for="tab1">NOW</label>
               <div class="container">
@@ -51,14 +54,14 @@
                         <div class="slider">
                             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="3" class=""></li>
                               </ol>
 
                               <div class="carousel-inner" role="listbox">
-                                <div class="item active">
+                                <div class="item">
                                   <img src="img/AMIL_slider.jpg">
                                   <div class="carousel-caption">
                                     <p class="marg_bott_8">Sergio Zevallos</p>
@@ -67,11 +70,11 @@
                                   </div>
                                 </div>
 
-                                <div class="item">
-                                  <img src="img/AMIL_slider.jpg" >
+                                <div class="item active left">
+                                  <img src="img/AMIL_slider.jpg">
                                 </div>
 
-                                <div class="item">
+                                <div class="item next left">
                                   <img src="img/AMIL_slider.jpg">
                                 </div>
 
@@ -138,16 +141,16 @@
                   <div class="row">
                     <div class="col-md-8">
                         <div class="slider">
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div id="slider-2" class="carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#slider-2" data-slide-to="0" class=""></li>
+                                <li data-target="#slider-2" data-slide-to="1" class=""></li>
+                                <li data-target="#slider-2" data-slide-to="2" class=""></li>
+                                <li data-target="#slider-2" data-slide-to="3" class="active"></li>
                               </ol>
 
                               <div class="carousel-inner" role="listbox">
-                                <div class="item active">
+                                <div class="item">
                                   <img src="img/AMIL_upcoming.jpg">
                                   <div class="carousel-caption">
                                     <p class="marg_bott_8">Charlie Parker</p>
@@ -156,21 +159,21 @@
                                   </div>
                                 </div>
                                 <div class="item">
-                                  <img src="img/AMIL_upcoming.jpg" >
+                                  <img src="img/AMIL_upcoming.jpg">
                                 </div>
                                 <div class="item">
                                   <img src="img/AMIL_upcoming.jpg">
                                 </div>
-                                <div class="item">
+                                <div class="item active">
                                   <img src="img/AMIL_upcoming.jpg">
                                 </div>
                             </div>
 
-                              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                              <a class="left carousel-control" href="#slider-2" role="button" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                               </a>
-                              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                              <a class="right carousel-control" href="#slider-2" role="button" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                               </a>
@@ -303,17 +306,24 @@
                 </div>
               </div>
           </div>
-
         </div>
+        </div>
+  </header>
+    <section class="home exhibitions">
+        
+        
 
 
-  	</section>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="http://code.angularjs.org/1.1.0/angular.min.js"></script>
-	  <script src="javascripts/miscript.js"></script>
-		<script src="javascripts/modernizr.custom.64483.js"></script>
+    <script src="javascripts/miscript.js"></script>
+    <script src="javascripts/modernizr.custom.64483.js"></script>
     <script src="jquery"></script>
-	</body>
+  
+  
+
+</body>
 </html>	
 

@@ -11,7 +11,7 @@
 
 body {
   color: black;
-  font-family: gothambold-webfont;
+  font-family: gothambold-webfont !important;
 }
 a:hover, a:focus {
     text-decoration: none;
@@ -37,10 +37,9 @@ a:hover, a:focus {
   background-size: cover;
   .barra_nav{
     background-color: white;
-    height: 16%;
-    .nav{
-      background-color: white;
-      height: 20%;
+        height: 112px !important;
+    nav {
+      height: 112px !important;
       width: 100%;
     }
     .titulo_nav {
@@ -51,14 +50,14 @@ a:hover, a:focus {
       p{
         direction: rtl;
         unicode-bidi: bidi-override;
+        font-size: 35px;
+        padding-left: 5%;
       }
     }
     .logo{
-      display: inline-block;
-      float: right;
-      margin: 1%;
-      margin-right: 2%;
-      margin-top: -4%;
+          float: right;
+padding-top: 1%;
+padding-right: 2%;
     }
     ul>li {
       font-size: 16px;
@@ -85,6 +84,7 @@ a:hover, a:focus {
   color: white;
   &:hover {
     opacity: 0.5;
+    cursor:pointer
   }
 }
 .menubar-responsive {
@@ -184,7 +184,7 @@ a:hover, a:focus {
       width: 100%;
     }
   .text_exhibitions {
-    padding: 5%;
+    padding: 15px;
     padding-left: 0px;
   }
   .titulo_exhibitions{
@@ -256,37 +256,10 @@ a:hover, a:focus {
 
 
 
-/* IPHONE 5 */
-@media screen and (max-width: 570px) and (min-width: 300px){
-  .exhibitions, .space, .contact {
-    .tab-content{
-      padding-top: 45%;
-    }
-    .logo {
-      img {
-        width: 60px !important;
-        margin-top: -45% !important;
-      }
-    }
-  }
-  .titulo_nav {
-      font-size: 25px !important;
-  }
-  .carousel-caption {
-    font-size: 16px;
-  }
-  .carousel-indicators{
-    visibility: hidden;
-  }
-  .space {
-    .text_space{
-      padding-left: 0px;
-      font-size: 17px;
-      margin-top: 30%;
-    }
-  }
-}
 
+
+
+    
 /* TABS MENU */ 
 
 $num-of-tabs: 4;
@@ -304,8 +277,8 @@ $num-of-tabs: 4;
 }
 
 .tab-wrap {
-  position: relative;
-  top: -88px;
+      position: relative;
+    top: -93px;
 }
 label {
   margin-left: 10% !important;
@@ -398,4 +371,12 @@ video {
   }
 }
 
-
+.carousel-control >.glyphicon-chevron-left, .carousel-control >.icon-prev,  {
+  margin-left: -25px !important;
+}
+.carousel-control > .glyphicon-chevron-right, .carousel-control > .icon-next {
+  margin-right: -25px !important;
+}
+.lineHeight {
+      line-height: 15px;
+}
