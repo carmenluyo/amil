@@ -11,7 +11,7 @@
 
 body {
   color: black;
-  font-family: gothambold-webfont;
+  font-family: gothambook-webfont !important;
 }
 a:hover, a:focus {
     text-decoration: none;
@@ -21,6 +21,11 @@ a:hover, a:focus {
   font-family: gothambold-webfont;
   src: url(../fonts/gothambold-webfont.woff);
 }
+@font-face {
+  font-family: gothambook-webfont;
+  src:url(../fonts/gothambook-webfont.woff);
+}
+
  /* UTILITIES */
 
 .margTopNone {
@@ -37,7 +42,7 @@ a:hover, a:focus {
   background-size: cover;
   .barra_nav{
     background-color: white;
-        height: 112px !important;
+    height: 112px !important;
     nav {
       height: 112px !important;
       width: 100%;
@@ -55,25 +60,22 @@ a:hover, a:focus {
         -o-transform: scale(-1, 1);
         transform: scale(-1, 1);
         font-size: 35px;
-            padding-left: 17%;
+        padding-left: 17%;
       }
     }
     .logo{
-          float: right;
-padding-top: 1%;
-padding-right: 2%;
+      float: right;
+      padding-top: 21px;
+      padding-right: 2%;
     }
     ul>li {
       font-size: 16px;
         a {
           color: white;
         &:hover {
-          -webkit-transform: scale(-1, 1);
-        -moz-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-          text-align: -webkit-left;
+          direction:rtl;
+          unicode-bidi: bidi-override;
+          text-decoration: none;
           transition: 2s;
         }
       }
@@ -84,7 +86,7 @@ padding-right: 2%;
     padding-top: calc(100% - 80%);
   }
 }
-.text{
+.text {
   border: 3px solid white;
   margin: 12px;
   padding: 12px;
@@ -94,6 +96,9 @@ padding-right: 2%;
     cursor:pointer
   }
 }
+
+
+/* MENU */
 .menubar-responsive {
   display: inline-block;
   height: 9%;
@@ -114,7 +119,6 @@ padding-right: 2%;
   padding: 12px;
 }
 
-/*Change toggle size by adjusting width & height*/
 .tb-menu-toggle {
   border: 0;
   position: relative;
@@ -166,103 +170,6 @@ padding-right: 2%;
         transform:rotate(-45deg);
 }
 
-/* SECTION SPACE*/
-.space {
-  background-image: url(../img/AMIL_space.jpg) !important;
-  .text_space {
-    color: white;
-    font-size: 23px;
-    padding-top: 5%;
-    padding-left: calc(100% - 62%);
-  }
-}
-
-/* SECTION EXHIBITIONS */
-
-.exhibitions {
-  background-color: white !important;
-  background-image: none !important;
-    img{
-      width: 100%;
-    }
-  .text_exhibitions {
-    padding: 15px;
-    padding-left: 0px;
-    line-height: 15px;
-  }
-  .titulo_exhibitions{
-    font-weight: bold;
-  }
-}
-
-.carousel-caption{
-  top: 0px;
-  left: 0px !important;
-  text-align: left !important;
-  font-size: 30px;
-  font-weight: bold;
-  padding-left: 5%;
-}
-.carousel-control {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-.marg_bott_8 {
-  margin-bottom: -8px;
-}
-@media screen and (max-width: 1201px){
-  .home .barra_nav {
-    background-color: white;
-    height: 16%;
-    position: fixed;
-    width: 100%;
-    z-index: 9999999999999999999999;
-    ul > li {
-    text-align: center;
-    font-size: 30px;
-    }
-  }
-  #menu, .sub-menu {
-      display: none;
-      list-style: none;
-      background-color: rgba(167, 169, 172, 0.87);
-      z-index: 9999999;
-      color: #fff;
-      position: fixed;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      top: 16%;
-      margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 320px) and (min-width: 257px){
-  .grid {
-    padding-right: 0px!important;
-    padding-top: calc(100% - 60%)!important;
-  }
-}
-@media screen and (max-width: 570px) and (min-width: 320px){
-  .grid {
-    padding-right: 0px !important;
-    padding-top: calc(100% - 70%)!important;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 571px){
-  .grid {
-    padding-right: 0px !important;
-    padding-top: calc(100% - 85%) !important;
-  }
-}
-
-
-
-
-
-
-
-    
 /* TABS MENU */ 
 
 $num-of-tabs: 4;
@@ -320,6 +227,104 @@ input[type="radio"][name="tabs"] {
     display: none;
   }
 }
+/* SECTION SPACE*/
+
+.space {
+  background-image: url(../img/AMIL_space.jpg) !important;
+  height: 100%;
+  .text_space {
+    color: white;
+    font-size: 30px;
+    padding-top: 5%;
+    font-family: gothambold-webfont !important;
+    line-height: 1.1;
+  }
+}
+
+/* SECTION EXHIBITIONS */
+
+.exhibitions {
+  background-color: white !important;
+  background-image: none !important;
+    img{
+      width: 100%;
+    }
+  .text_exhibitions {
+    padding: 15px;
+    padding-left: 0px;
+    line-height: 15px;
+  }
+  .titulo_exhibitions{
+    font-weight: bold;
+    font-family: gothambold-webfont !important;
+  }
+}
+
+.carousel-caption{
+  top: 0px;
+  left: 0px !important;
+  text-align: left !important;
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 5%;
+  font-family: gothambold-webfont !important;
+}
+.carousel-control {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.marg_bott_8 {
+  margin-bottom: -8px;
+}
+
+
+/*  RESPONSIVE */
+
+@media screen and (max-width: 1201px){
+  .home .barra_nav {
+    background-color: white;
+    height: 16%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999999999999999999;
+    ul > li {
+    text-align: center;
+    font-size: 30px;
+    }
+  }
+  #menu, .sub-menu {
+      display: none;
+      list-style: none;
+      background-color: rgba(167, 169, 172, 0.87);
+      z-index: 9999999;
+      color: #fff;
+      position: fixed;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      top: 16%;
+      margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width: 257px){
+  .grid {
+    padding-right: 0px!important;
+    padding-top: calc(100% - 60%)!important;
+  }
+}
+@media screen and (max-width: 570px) and (min-width: 320px){
+  .grid {
+    padding-right: 0px !important;
+    padding-top: calc(100% - 70%)!important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 571px){
+  .grid {
+    padding-right: 0px !important;
+    padding-top: calc(100% - 85%) !important;
+  }
+}
 @media screen and (max-width: 800px) {
   .tab-wrap {
     width: 80%;
@@ -327,49 +332,42 @@ input[type="radio"][name="tabs"] {
     top: -106px;
   }
 }
-
-.container{
-  position: relative;
-}
-
-
-
-
 /*  VIDEO */
 video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg') no-repeat;
-    background-size: cover;
-    -webkit-transition: 1s opacity;
-    transition: 1s opacity;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg') no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
 }
 .video_link{
-      position: absolute;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-
-
 
 /* CONTACT */
 .contact {
   background-image: url(../img/AMIL_contact.jpg) !important;
+  height: 100%;
   .grid {
     padding-right: 0px;
     padding-top: calc(100% - 75%);
     .text {
       min-height: 14%;
+      font-family: gothambold-webfont;
+      font-size: 16px;
     }
   }
 }
@@ -384,7 +382,7 @@ video {
       line-height: 15px;
 }
 
-
+/* LEE MAS */
 
 .more {
   display: none;
