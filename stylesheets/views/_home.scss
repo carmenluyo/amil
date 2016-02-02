@@ -429,3 +429,7 @@ a {
 .padd_top7 {
   padding-top: 7px !important;
 }
+input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+    color: black;
+    transition: 3s;
+}
