@@ -5861,7 +5861,7 @@ video {
   display: inline-block; }
 
 a {
-  color: black !important;
+  color: black;
   text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
