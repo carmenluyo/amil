@@ -5565,6 +5565,8 @@ a:hover, a:focus {
       height: 112px !important;
       width: 100%;
       font-family: gothambold-webfont; }
+      .home .barra_nav nav a {
+        font-family: gothambold-webfont; }
     .home .barra_nav .titulo_nav {
       text-align: center;
       font-size: 35px;
@@ -5585,7 +5587,8 @@ a:hover, a:focus {
     .home .barra_nav ul > li {
       font-size: 16px; }
       .home .barra_nav ul > li a {
-        color: white; }
+        color: white;
+        font-family: gothambold-webfont; }
         .home .barra_nav ul > li a:hover {
           direction: rtl;
           unicode-bidi: bidi-override;
@@ -5599,7 +5602,8 @@ a:hover, a:focus {
   border: 3px solid white;
   margin: 12px;
   padding: 12px;
-  color: white; }
+  color: white;
+  font-family: gothambold-webfont; }
   .text:hover {
     opacity: 0.5;
     cursor: pointer; }
@@ -5863,5 +5867,8 @@ video {
 a {
   color: black;
   text-decoration: none; }
+
+.padd_top7 {
+  padding-top: 7px !important; }
 
 /*# sourceMappingURL=main.css.map */
