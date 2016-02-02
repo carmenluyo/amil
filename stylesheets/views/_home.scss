@@ -50,6 +50,7 @@ a:hover, a:focus {
       font-family: gothambold-webfont;
       a{
         font-family: gothambold-webfont;
+        color: black;
       }
     }
     .titulo_nav {
@@ -218,6 +219,9 @@ input[type="radio"][name="tabs"] {
       }
       .tab-content {
         display: block;
+        a{
+          color: black !important;
+        }
       }
     }
   }
@@ -427,14 +431,16 @@ video {
     z-index: 5;
     display: inline-block;
 }
-a {
-    color: black;
-    text-decoration: none;
-}
+
 .padd_top7 {
   padding-top: 7px !important;
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content label {
     color: black;
     transition: 3s;
+}
+.container {
+  a{
+    color: black;
+  }
 }
