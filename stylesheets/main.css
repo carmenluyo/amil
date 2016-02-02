@@ -5556,7 +5556,8 @@ a:hover, a:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%; }
   .home .barra_nav {
     background-color: white;
     height: 112px !important; }
@@ -5822,9 +5823,6 @@ video {
       font-family: gothambold-webfont;
       font-size: 16px; }
 
-.carousel-control > .glyphicon-chevron-left, .carousel-control > .icon-prev {
-  margin-left: -25px !important; }
-
 .carousel-control > .glyphicon-chevron-right, .carousel-control > .icon-next {
   margin-right: -25px !important; }
 
@@ -5849,5 +5847,17 @@ video {
 
 .margTop23 {
   margin-top: -23px; }
+
+/* container 2 */
+.container_2 {
+  padding-right: 10%;
+  padding-left: 10%; }
+
+.arrow {
+  width: 20px !important;
+  height: 30px;
+  margin-top: 207px;
+  z-index: 5;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

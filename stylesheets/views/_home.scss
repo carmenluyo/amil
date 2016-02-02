@@ -40,6 +40,7 @@ a:hover, a:focus {
   background-position: center;
   background-size: 100% 100%;
   background-size: cover;
+  height: 100%;
   .barra_nav{
     background-color: white;
     height: 112px !important;
@@ -372,9 +373,7 @@ video {
   }
 }
 
-.carousel-control >.glyphicon-chevron-left, .carousel-control >.icon-prev,  {
-  margin-left: -25px !important;
-}
+
 .carousel-control > .glyphicon-chevron-right, .carousel-control > .icon-next {
   margin-right: -25px !important;
 }
@@ -397,9 +396,23 @@ video {
   display: none;
 }
 .leer_mas {
-      padding-bottom: 15px;
+    padding-bottom: 15px;
     margin-top: -16px;
 }
 .margTop23 {
-      margin-top: -23px;
+  margin-top: -23px;
+}
+
+/* container 2 */
+.container_2 {
+      padding-right: 10%;
+    padding-left: 10%;
+}
+
+.arrow {
+    width: 20px !important;
+    height: 30px;
+    margin-top: 207px;
+    z-index: 5;
+    display: inline-block;
 }
