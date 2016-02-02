@@ -5684,6 +5684,10 @@ label {
   color: #CECECE;
   font-size: 10px;
   font-family: gothambold-webfont; }
+  label:hover {
+    color: black;
+    opacity: 0.5;
+    transition: 2s; }
 
 input[type="radio"][name="tabs"] {
   position: absolute;
